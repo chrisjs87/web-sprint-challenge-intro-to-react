@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './App.css';
 import axios from 'axios';
+import Character from './components/Character';
 
 export default function App() {
   // Try to think through what state you'll need for this app before starting. Then build out
@@ -25,6 +26,11 @@ export default function App() {
   return (
     <div className="App">
       <h1 className="Header">Star Wars Characters</h1>
+      {
+        charactersData.map(char => {
+          return <Character key={char.id} charName={char.name} charAge={char.birth_year}/>
+        })
+      }
     </div>
   );
 }
