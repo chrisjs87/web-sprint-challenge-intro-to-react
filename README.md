@@ -12,6 +12,8 @@ You are not allowed to collaborate during the sprint challenge.
 
 ## Project Set Up
 
+//initial commit change
+
 - [ ] Fork and clone the repo. Delete your old fork from Github first if you are repeating this Unit.
 - [ ] Open the assignment in Canvas and click on the "Set up git" option.
 - [ ] Follow instructions to set up Codegrade's Webhook and Deploy Key.
@@ -81,6 +83,17 @@ After finishing your required elements, you can push your work further. These go
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
 
 1. What is React JS and what problems does it solve? Support your answer with concepts introduced in class and from your personal research on the web.
+
+React is a javascript library; it solves problems with reusability and readability, but most importantly, it makes updating the DOM way more efficient.
+
 1. Describe component state.
+
+Component state is data that can be changed on a component.
+
 1. Describe props.
+
+Props is a conventional way of representing an object and its properties passed from parent components to child components. It is a parameter that will have arguments passed to it.
+
 1. What are side effects, and how do you sync effects in a React component to changes of certain state or props?
+
+Side effects are state changes that can be observed outside a called function that are other than its returned value. The useEffect hook can be used to sync effects to changes in a specified sate or prop.
